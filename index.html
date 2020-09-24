@@ -91,6 +91,20 @@ for(res;sz)
     ss(iapp+"/"+res+mian,mian)
     fr("iApp/DropApptect/bd.fuck",xxx)
     fw(mian,xxx)
+    ss(iapp+"/"+res+"/src/",src)
+    fl(src,false,ssz)
+    for(code;ssz)
+    {
+      ss(iapp+"/"+res+"/src/"+code,base)
+      f(base!="mian.iyu")
+      {
+        fr(base,nr)
+        java(bytes,nr,"String.getBytes","String","utf-8")
+        java(bytes2,null,"android.util.Base64.encode","byte[]",bytes,"int",2)
+        javanew(str,"String","byte[]",bytes2,"String","utf-8")
+        fw(base,str)
+      }
+    }
   }
   else
   {
