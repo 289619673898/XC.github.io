@@ -17,7 +17,6 @@ height=-2</ppt>
 ♠/.
 
 A song might bring a smile to your face
-可以赶尽无法杀绝
 
 ./
 fd("a",ImaAce)
@@ -139,28 +138,46 @@ t()
             ss(Am+im,En)
             fr(En,E)
             otob("utf-8",E,jmmw)
-            sr(jmmw," ","XHMMJ",jmmw)
+            s mm="JoyRide"
             f(jmmw?"-")
             {
-            sr(jmmw,"-","ALGGJWL",jmmw)
+              sr(jmmw," ","J",jmmw)
+              sr(jmmw,"1","X",jmmw)
+              sr(jmmw,"2","L",jmmw)
+              sr(jmmw,"3","A",jmmw)
+              sr(jmmw,"4","B",jmmw)
+              sr(jmmw,"5","C",jmmw)
+              sr(jmmw,"6","D",jmmw)
+              sr(jmmw,"7","E",jmmw)
+              sr(jmmw,"8","F",jmmw)
+              sr(jmmw,"9","G",jmmw)
+              sr(jmmw,"0","H",jmmw)
+              sr(jmmw,"-",mm,jmmw)
+              java(bytes,jmmw,"String.getBytes","String","utf-8")
+              java(bytes2,null,"android.util.Base64.encode","byte[]",bytes,"int",2)
+              javanew(jmmw,"String","byte[]",bytes2,"String","utf-8")
+              fw(En,jmmw)
             }
-            sr(jmmw,"1","X",jmmw)
-            sr(jmmw,"2","L",jmmw)
-            sr(jmmw,"3","A",jmmw)
-            sr(jmmw,"4","B",jmmw)
-            sr(jmmw,"5","C",jmmw)
-            sr(jmmw,"6","D",jmmw)
-            sr(jmmw,"7","E",jmmw)
-            sr(jmmw,"8","F",jmmw)
-            sr(jmmw,"9","G",jmmw)
-            sr(jmmw,"0","H",jmmw)
-            java(bytes,jmmw,"String.getBytes","String","utf-8")
-            java(bytes2,null,"android.util.Base64.encode","byte[]",bytes,"int",2)
-            javanew(jmmw,"String","byte[]",bytes2,"String","utf-8")
-            fw(En,jmww)
-            syso(jmmw)
+            else
+            {
+              sr(jmmw," ","J",jmmw)
+              sr(jmmw,"1","X",jmmw)
+              sr(jmmw,"2","L",jmmw)
+              sr(jmmw,"3","A",jmmw)
+              sr(jmmw,"4","B",jmmw)
+              sr(jmmw,"5","C",jmmw)
+              sr(jmmw,"6","D",jmmw)
+              sr(jmmw,"7","E",jmmw)
+              sr(jmmw,"8","F",jmmw)
+              sr(jmmw,"9","G",jmmw)
+              sr(jmmw,"0","H",jmmw)
+              java(bytes,jmmw,"String.getBytes","String","utf-8")
+              java(bytes2,null,"android.util.Base64.encode","byte[]",bytes,"int",2)
+              javanew(jmmw,"String","byte[]",bytes2,"String","utf-8")
+              fw(En,jmmw)
+            }            
           }
-        }        
+        }
         f(sss.ifmusic==null)
         {
           bfm("http://music.163.com/song/media/outer/url?id=1445228812&userid=1666229159",sss.haha)
